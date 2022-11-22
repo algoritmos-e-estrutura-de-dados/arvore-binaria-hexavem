@@ -1,7 +1,7 @@
 # arvore-binaria-hexavem
 arvore-binaria-hexavem created by GitHub Classroom
 
-Grupo: 
-- Renan da Costa Nunes
+# Grupo: 
+- Renan da Cota Nunes
 - Pedro Gabriel Xavier
-- Alexandre Kenji Sakai
+- Alexandre Keiji Andreatta Sakai
