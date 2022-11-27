@@ -11,6 +11,13 @@ bin.adicionar(Node(20))
 bin.adicionar(Node(553))
 bin.adicionar(Node(36))
 
-print(f"Arvore: {bin}")
-print('')
-print(bin.emOrdem())
+print(repr(bin))
+
+bin.remover(Node(7))
+print(repr(bin))
+
+bin.remover(Node(3))
+print(repr(bin))
+
+bin.remover(Node(553))
+print(repr(bin))
