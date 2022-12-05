@@ -87,7 +87,7 @@ class BinaryTree:
 
 	def preOrdem(self):
 		valor = ''
-		valor += f"| {self.root.value} ->"
+		valor += f"| {self.root.value} -> "
 		if (self.root.esquerda):
 			valor += f"{repr(self.root.esquerda)} <- "
 		if (self.root.direita):
@@ -100,7 +100,7 @@ class BinaryTree:
 			valor += f"{repr(self.root.esquerda)} <- "
 		if (self.root.direita):
 			valor += f" -> {repr(self.root.direita)}"
-		valor += f"-> {self.root.value} |"
+		valor += f" -> {self.root.value} |"
 		return valor
 
 	def __str__(self):
