@@ -38,6 +38,9 @@ class BinaryTree:
 
 		target = self.root
 		while True:
+			if (target.value is not None and target.value == node.value):
+				break
+
 			if target.value is None:
 				target.value = node.value
 				break
@@ -82,8 +85,35 @@ class BinaryTree:
 
 		self.ordenar()
 
+	def preOrdem(self):
+		valor = ''
+		valor += f"| {self.root.value} ->"
+		if (self.root.esquerda):
+			valor += f"{repr(self.root.esquerda)} <- "
+		if (self.root.direita):
+			valor += f" -> {repr(self.root.direita)}"
+		return valor
+
+	def posOrdem(self):
+		valor = ''
+		if (self.root.esquerda):
+			valor += f"{repr(self.root.esquerda)} <- "
+		if (self.root.direita):
+			valor += f" -> {repr(self.root.direita)}"
+		valor += f"-> {self.root.value} |"
+		return valor
+
 	def __str__(self):
 		return f"{self.root}"
+
+	def emOrdem(self):
+		valor = ''
+		if (self.root.esquerda):
+			valor += f"{repr(self.root.esquerda)} <- "
+		valor += f"| {self.root.value} |"
+		if (self.root.direita):
+			valor += f" -> {repr(self.root.direita)}"
+		return valor
 
 	def __repr__(self):
 		valor = ''

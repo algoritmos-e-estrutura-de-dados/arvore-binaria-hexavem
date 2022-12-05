@@ -1,7 +1,7 @@
 from binary_tree import BinaryTree
 from node import Node
 
-bin = BinaryTree()
+bin = BinaryTree()  
 bin.adicionar(Node(30))
 bin.adicionar(Node(7))
 bin.adicionar(Node(3))
