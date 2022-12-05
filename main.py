@@ -11,13 +11,15 @@ bin.adicionar(Node(20))
 bin.adicionar(Node(553))
 bin.adicionar(Node(36))
 
-print(repr(bin))
+print(bin.emOrdem())
+print(bin.posOrdem())
+print(bin.preOrdem())
 
 bin.remover(Node(7))
-print(repr(bin))
+print(bin.emOrdem())
 
 bin.remover(Node(3))
-print(repr(bin))
+print(bin.posOrdem())
 
 bin.remover(Node(553))
-print(repr(bin))
+print(bin.preOrdem())
