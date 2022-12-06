@@ -85,23 +85,17 @@ class BinaryTree:
 
 		self.ordenar()
 
-	def preOrdem(self):
-		valor = ''
-		valor += f"| {self.root.value} -> "
-		if (self.root.esquerda):
-			valor += f"{repr(self.root.esquerda)} <- "
-		if (self.root.direita):
-			valor += f" -> {repr(self.root.direita)}"
-		return valor
+	def preOrdem(self, node):
+		if node is not None:
+			print(node.value)
+			self.preOrdem(node.esquerda)
+			self.preOrdem(node.direita)
 
-	def posOrdem(self):
-		valor = ''
-		if (self.root.esquerda):
-			valor += f"{repr(self.root.esquerda)} <- "
-		if (self.root.direita):
-			valor += f" -> {repr(self.root.direita)}"
-		valor += f" -> {self.root.value} |"
-		return valor
+	def posOrdem(self, node):
+		if node is not None:
+			self.posOrdem(node.esquerda)
+			self.posOrdem(node.direita)
+			print(node.value)
 
 	def __str__(self):
 		return f"{self.root}"

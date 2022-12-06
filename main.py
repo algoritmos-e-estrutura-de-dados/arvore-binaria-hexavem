@@ -12,14 +12,14 @@ bin.adicionar(Node(553))
 bin.adicionar(Node(36))
 
 print(bin.emOrdem())
-print(bin.posOrdem())
-print(bin.preOrdem())
+print()
 
-bin.remover(Node(7))
-print(bin.emOrdem())
+print("INICIO :: Pre Ordem:")
+print(bin.preOrdem(bin.root))
+print("FIM :: Pre Ordem:")
 
-bin.remover(Node(3))
-print(bin.posOrdem())
+print()
 
-bin.remover(Node(553))
-print(bin.preOrdem())
+print("INICIO :: Pos Ordem:")
+print(bin.posOrdem(bin.root))
+print("FIM :: Pos Ordem:")
